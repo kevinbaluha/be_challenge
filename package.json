@@ -1,0 +1,47 @@
+{
+  "name": "be_challenge",
+  "version": "0.0.5",
+  "description": "Back end Proxy",
+  "author": "Kevin Baluha <kevin@baluha.com>",
+  "contributors": [
+    {
+      "name": "Kevin Baluha",
+      "email": "kevin@baluha.com"
+    }
+  ],
+  "bin": {
+    "module-name": "./bin/wlf-law-server"
+  },
+  "scripts": {
+    "test": "vows --spec --isolate",
+    "start": "node index.js",
+    "predeploy": "echo im about to deploy",
+    "postdeploy": "echo ive deployed",
+    "prepublish": "coffee --bare --compile --output lib/foo src/foo/*.coffee"
+  },
+  "main": "lib/gaia.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kevinbaluha/be_challenge.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kevinbaluha/be_challenge/issues"
+  },
+  "keywords": [
+    "whee"
+  ],
+  "dependencies": {
+    "express": "^4.2.0",
+    "node-rest-client": "^3"
+  },
+  "devDependencies": {
+    "vows": "^0.7.0",
+    "assume": "<1.0.0 || >=2.3.1 <2.4.5 || >=2.5.2 <3.0.0",
+    "pre-commit": "*"
+  },
+  "preferGlobal": true,
+  "private": true,
+  "subdomain": "gaia",
+  "analyze": true,
+  "license": "MIT"
+}
